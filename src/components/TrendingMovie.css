@@ -1,0 +1,53 @@
+body{
+    background-color: white;
+}
+.movie{
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px black;
+    margin: 1rem;
+    width: 250px;
+    position: relative;
+    background-color: #264653;
+    overflow: hidden;
+}
+
+.movie-img{
+    max-width: 100%;
+}
+.movie-title{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.movie-overview{
+    background-color: #f4a261;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: 0.4s ease-in;
+    padding: 1rem;
+}
+
+.movie:hover .movie-overview{
+    transform: translateY(0%);
+}
+@media screen and (max-device-width: 640px) {
+    .search-bar {
+      margin: 1rem;
+    }
+  }
+
+  @media screen and (max-device-width: 1024px) {
+    .search-bar {
+      margin: 10px;
+    }
+  }
+
+
+
+
+
